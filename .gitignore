@@ -1,6 +1,7 @@
 # idea
-./airflow.iml
+airflow.iml
 /.idea/
 
 # cache
 /dags/__pycache__/
+
