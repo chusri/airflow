@@ -8,8 +8,5 @@ build:
     MYSQL_USER=airflower
     MYSQL_PASSWORD=eirfloub!*
 release:
-  command:
-    - ./deployment-tasks.sh
-  image: af-engine
 run:
-  af-engine: airflow-engine/airflow.sh
+  af-engine: ./airflow.sh
