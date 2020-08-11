@@ -3,5 +3,5 @@ airflow.iml
 /.idea/
 
 # cache
-/dags/__pycache__/
+/airflow-engine/dags/__pycache__/
 
