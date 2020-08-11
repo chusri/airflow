@@ -1,12 +1,10 @@
-setup:
 build:
   docker:
     af-engine: airflow-engine/Dockerfile
   config:
-    MYSQL_ROOT_PASSWORD=h7649bir
-    MYSQL_DATABASE=airflowdb
-    MYSQL_USER=airflower
-    MYSQL_PASSWORD=eirfloub!*
-release:
+    MYSQL_ROOT_PASSWORD="h7649bir"
+    MYSQL_DATABASE="airflowdb"
+    MYSQL_USER="airflower"
+    MYSQL_PASSWORD="eirfloub!*"
 run:
   af-engine: ./airflow.sh
