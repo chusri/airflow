@@ -22,7 +22,7 @@ services:
       - airflow-backend
     volumes:
       - "airflow-engine:/root/airflow/"
-      - dags/:/root/airflow/dags/
+      - "dags:/root/airflow/dags/"
     ports:
       - "8080:8080"
     env_file:
@@ -34,3 +34,4 @@ networks:
 volumes:
   airflow-engine:
   airflow-backend:
+  dags:

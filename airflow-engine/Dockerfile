@@ -10,5 +10,4 @@ COPY airflow.sh airflow.sh
 RUN chmod +x airflow.sh
 COPY fernet.py fernet.py
 COPY mysqlconnect.py mysqlconnect.py
-COPY ../dags /root/airflow/dags/
 CMD airflow.sh
