@@ -1,3 +1,9 @@
+"""
+A DAG docstring might be a good way to explain at a high level
+what problem space the DAG is looking at.
+Links to design documents, upstream dependencies etc
+are highly recommended.
+"""
 # -*- coding: utf-8 -*-
 #
 # Licensed to the Apache Software Foundation (ASF) under one
@@ -17,6 +23,7 @@
 # specific language governing permissions and limitations
 # under the License.
 
+
 from builtins import range
 from datetime import timedelta
 
@@ -31,11 +38,11 @@ args = {
 }
 
 dag = DAG(
-    dag_id='hb_example_bash_operator',
+    dag_id='Lendkey_DagTemplate-Simple-V1',
     default_args=args,
     schedule_interval='0 0 * * *',
     dagrun_timeout=timedelta(minutes=60),
-    tags=['Hank example']
+    tags=['This is a simple DAG template - start with this.']
 )
 
 run_this_last = DummyOperator(
