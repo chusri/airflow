@@ -45,6 +45,8 @@ dag = DAG(
     tags=['This is a simple DAG template - start with this.']
 )
 
+dag.doc_md = __doc__
+
 run_this_last = DummyOperator(
     task_id='run_this_last',
     dag=dag,
