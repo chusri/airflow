@@ -2,7 +2,7 @@
 BEST PRACTICE: Document your DAG by putting in a docstring to explain at a high level
 what problem space the DAG is looking at. Including links to design documents, upstream dependencies etc
 are highly recommended. Note that by doing this, it will flow through to the AirFlow UI so you can actually
-see this when using the Scheduler. It is important to include dag.doc_md = __doc__ in your code.
+see this when using the Scheduler. It is important to include dag.doc_md = __doc__ in your code for this to work.
 """
 # -*- coding: utf-8 -*-
 #
@@ -45,7 +45,7 @@ dag = DAG(
     tags=['This is a simple DAG template - start with this.']
 )
 
-dag.doc_md = __doc__
+dag.doc_md = __doc__  #This will force the docstring to flow to the UI.
 
 run_this_last = DummyOperator(
     task_id='run_this_last',
