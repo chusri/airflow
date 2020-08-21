@@ -37,6 +37,14 @@ args = {
     'start_date': days_ago(2),
 }
 
+'''
+    Change the name of your DAG when you change the start date, using the Version in the dag_id 
+    Changing the start_date of a DAG creates a new entry in Airflow's database, which could confuse the scheduler
+    because there will be two DAGs with the same name but different schedules.
+    Changing the name of a DAG also creates a new entry in the database, which powers the dashboard, 
+    so follow a consistent naming convention since changing a DAG's name doesn't delete the entry in the database
+    for the old name.
+'''
 dag = DAG(
     dag_id='Lendkey_DagTemplate-Simple-V1',
     default_args=args,
