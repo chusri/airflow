@@ -6,3 +6,4 @@ airflow.iml
 /dags/__pycache__/
 
 .vscode/launch.json
+tests/__pycache__/
