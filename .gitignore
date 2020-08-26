@@ -2,6 +2,9 @@
 airflow.iml
 /.idea/
 
+# Apple
+.DS_Store
+
 # cache
 /dags/__pycache__/
 
