@@ -9,5 +9,5 @@ airflow.iml
 tests/__pycache__/
 
 # VS Code
-.devcontainer/
-.vscode/
+/.devcontainer/
+/.vscode/
